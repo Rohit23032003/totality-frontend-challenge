@@ -1,0 +1,103 @@
+
+.MainContainer{
+    position: relative;
+}
+
+
+.Conatiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+.filterSection {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    input {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+
+.ToatlConstDiv{
+    width: 50vw;
+    height: 4rem;
+    margin: 0;
+    z-index: 9;
+    background-color: azure;
+}
+
+.saperateLine{
+    width: 100%;
+    height: 1.5px;
+    background-color: black;
+}
+
+
+
+.propertyContainer{
+    width: 75%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    box-shadow: 10px 4px 10px 10px rgba(0, 0, 0, 0.1);
+    height: 85vh;
+    padding: 2rem;
+    padding-bottom: 6rem; // Add bottom padding to accommodate the total cost section
+    box-sizing: border-box;
+    overflow-y: scroll;
+    position: relative;
+    align-self: center;
+}
+
+.propertyCardContainer{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.ToatlConstDiv{
+    position: fixed;  // Make the total cost sticky at the bottom
+    bottom: 1rem;
+    width: 70%;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 4px 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
+.saperateLine{
+    width: 99%;
+    height: 1.5px;
+    background-color: black;
+}
+
+
+@media (max-width:768px){
+    .ToatlConstDiv{
+        bottom: 6rem;
+        align-self: center;
+    }
+}

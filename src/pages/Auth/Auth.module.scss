@@ -1,0 +1,91 @@
+// src/pages/Auth.module.scss
+
+.card {
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer {
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+// .inputLabel {
+//   display: block;
+//   margin-bottom: 5px;
+// }
+
+.inputLabel {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left; /* Align labels to the left */
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submitBtn:hover {
+  background-color: #005bb5;
+}
+
+.toggleLink {
+  color: #0070f3;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.errorText {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.message {
+  margin-top: 20px;
+  color: green;
+}
+
+/* Progress Bar Styles */
+.progressBar {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #0070f3 0%, #00d1f2 50%, #0070f3 100%);
+  background-size: 200% 100%;
+  animation: loading 2s infinite linear;
+  margin-bottom: 20px;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
